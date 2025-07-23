@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive</title>
+        <link rel="stylesheet" href="css/coba.css">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        
+            
+    </head>
+    <body>
+        <div class="header">
+            <h1>Selamat Ulang Tahun yang ke-22 Erfina Nur Rosyida</h1>
+            
+        </div>
+        
+            
+        
+
+        <div class = "baris">
+            <div class ="menu col-3">
+                <uL>
+                    <li><a href="#island">My Massages</a></li>
+                    <li><a href ="#ours">Our's</a></li>
+                    <li><a href="#yourmassages">your massages</a></li>
+                    
+                    
+
+                </uL>
+                
+            </div>
+            <div class ="content col-6">
+                <h1 >My Massages </h1>
+                <p id="mymassages"><b>Assalamu’alaikum warahmatullahi wabarakatuh, cinta.</b><br><br>
+
+                    Alhamdulillah... Hari ini Allah menambahkan satu tahun lagi usiamu.
+                    Di usia ke-22 ini, aku berdoa semoga Allah selalu melimpahkan rahmat, berkah, dan perlindungan-Nya untukmu.<br>
+                    <br>Semoga kamu senantiasa menjadi wanita yang shalihah, kuat, bijak, dan selalu dalam lindungan Allah di setiap langkahmu.<br>
+                    <br>
+                    Aku bersyukur kepada Allah karena dipertemukan denganmu—seseorang yang tidak hanya cantik luar dalam, tapi juga senantiasa mengingatkan dalam kebaikan dan doa.<br>
+                    <br>
+                    Semoga cita-citamu dan skripsimu sebentar lagi dimudahkan oleh-Nya, hatimu selalu tenang dalam iman, dan semoga cinta kita dijaga oleh Allah hingga halal dan selamanya dalam ridha-Nya.
+                    Aamiin ya Rabb. 🤍
+                    <br><br>
+
+                    <b>Barakallahu fii umrik ya sayangku.</b><br>
+                    I love you </p>
+                
+                
+                
+            </div>
+
+            
+
+            <div id="ours" class="ours">
+                <h1>Our's</h1>
+                <img src="img/wa1.jpg " alt = "gambar1">
+                <img src="img/wa2.jpg " alt = "gambar2">
+                <img src="img/wa3.jpg " alt = "gambar3">
+                <img src="img/wa4.jpg " alt = "gambar4">
+
+            </div>
+
+            
+            <div class="form-group" id ="yourmassages">
+                <h2>Kirim Pesan ke WhatsApp</h2>
+                <form id="waForm" onsubmit="sendToWhatsApp(event)">
+                    <label for="waName">Dari :</label>
+                    <input type="text" id="waName" name="waName" required>
+                    <br>
+                    <label for="waMessage">Pesan:</label>
+                    <textarea id="waMessage" name="waMessage" required></textarea>
+                    <br>
+                    <button type="submit" class="button">Kirim ke WhatsApp</button>
+                </form>
+            </div>
+            <script>
+            function sendToWhatsApp(e) {
+                e.preventDefault();
+                var name = document.getElementById('waName').value;
+                var message = document.getElementById('waMessage').value;
+                var phone = '628993541222'; // Ganti dengan nomor WhatsApp tujuan
+                var url = 'https://wa.me/' + phone + '?text=' + encodeURIComponent('Nama: ' + name + '\nPesan: ' + message);
+                window.open(url, '_blank');
+            }
+            </script>
+            <audio src="Audio/hbd.mp3" controls autoplay></audio>
+            <div class ="footer">
+                <p>&copy; Copyright 2025</p>
+
+            </div>
+
+        </div>
+    </body>
+</html>
